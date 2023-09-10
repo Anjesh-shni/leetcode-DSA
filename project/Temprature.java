@@ -4,19 +4,20 @@ public class Temprature{
     public static void main(String[] args) {
 
         Scanner in= new Scanner(System.in);
-        // float highTemp=122.0f;
-        // float lowTemp=60.8f;
-        // System.out.print("Enter temprature that you want to set in Celsius: ");
-        // float tempC=in.nextFloat();
+        float highTemp=122.0f;
+        System.out.print("Enter temprature that you want to set in Celsius: ");
+        float tempC=in.nextFloat();
 
-        // float temF= (tempC*9/5)+32;
+        float temF= (tempC*9/5)+32;
 
-        // if(temF>=highTemp){
-        //  System.out.println("Your room temprature is very hot, automatic cooling system is turned on -:)");
-        // }else{
-        //     System.out.println("temprature set succesfully");
-        // }
-        // System.out.println(temF);
+        if(temF>=highTemp){
+         System.out.println("Your room temprature is very hot, automatic cooling system is turned on -:)");
+        }else{
+            System.out.println("temprature set succesfully");
+        }
+        System.out.println(temF);
+
+
        System.out.print("Enter your salary: ");
         double salary=in.nextDouble();
         if(salary>10000){
